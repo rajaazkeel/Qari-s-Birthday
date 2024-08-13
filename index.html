@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qari Birthday</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        background-image: url("6ob.gif");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .card {
+        width: 300px;
+        height: 380px;
+        background: rgba(7, 24, 46, 0.9);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .card h2 {
+        z-index: 1;
+        color: white;
+        font-size: 2em;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+
+      .message {
+        z-index: 1;
+        color: white;
+        font-size: 1em;
+        text-align: center;
+        padding: 0 15px;
+        line-height: 1.4;
+      }
+
+      .regards {
+        z-index: 1;
+        color: red;
+        font-size: 0.9em;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 15px;
+      }
+
+      .card::before {
+        content: "";
+        position: absolute;
+        width: 150px;
+        background-image: linear-gradient(
+          180deg,
+          rgb(0, 183, 255),
+          rgb(255, 48, 255)
+        );
+        height: 130%;
+        animation: rotBGimg 3s linear infinite;
+        transition: all 0.2s linear;
+      }
+
+      @keyframes rotBGimg {
+        from {
+          transform: rotate(0deg);
+        }
+
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .card::after {
+        content: "";
+        position: absolute;
+        background: #07182e;
+        inset: 10px;
+        border-radius: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h2>Happy Birthday, Hamza! 🎉</h2>
+      <p class="message">
+        Wishing you a day filled with joy and laughter! 😄🎈 May your dreams
+        come true and your year ahead be filled with happiness. 🌟 Cheers to
+        another amazing year! 🥂🎁
+      </p>
+      <p class="regards">
+        Regards, <br />
+        Hajvery Dauran
+      </p>
+    </div>
+  </body>
+</html>
